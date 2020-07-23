@@ -27,8 +27,8 @@ i = 0
 #print("{} - тута".format(linksFile[:linksFile.find("\n")]))
 for link in linksFile:
     i+=1
-    if i == 4: break
-    time.sleep(1)
+    #if i == 4: break
+    time.sleep(0.5)
     downloadPage(link)
     print("{} - идет".format(i))
 

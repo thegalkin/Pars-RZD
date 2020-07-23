@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<link href="http://dzvr.ru/styles/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/styles/css/style.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/styles/css/term.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/favicon.ico" rel="icon" type="image/x-icon"/>
+<script src="http://dzvr.ru/styles/js/jquery.min.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery.bxslider.min.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery.fancybox.pack.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="http://dzvr.ru/styles/js/main.js"></script>
+<script src="http://dzvr.ru/styles/js/term.js"></script>
+</head>
+<body>
+<div class="site">
+<div class="head">
+<a href="http://dzvr.ru" id="logo"></a>
+<div class="clr"></div>
+<div class="topSearch">
+<form>
+<input autocomplete="off" class="search-input ui-autocomplete-input" data-search="true" maxlength="60" name="terminal" placeholder="Введите название вокзала или города" type="text" value=""/>
+<input class="search-btn" type="submit" value="ИСКАТЬ"/>
+</form>
+<div class="allTerm st-all-term">
+<a href="#">все вокзалы россии</a>
+</div>
+<div class="st-all-term-maps grayBlock" style="width:1000px;">
+<div class="yandex-maps">
+<div id="map" style="width:1000px; height:340px"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mainpage">
+<div class="head" style="padding-bottom:30px;">
+<div class="logo-dzvr">
+<a href="http://dzvr.ru/">Дирекция
+			железнодорожных
+			вокзалов</a>
+</div>
+<div class="logo-rzd">
+<a href="http://rzd.ru"><img src="http://dzvr.ru/terminals/v2/img/logo_rzd-ru.png"/></a>
+</div>
+<div class="term-name">
+<h1>Сайт вокзала в разработке</h1>
+</div>
+</div>
+<br style="clear:both;"/>
+<br/>
+<img alt="404" src="http://dzvr.ru/terminals/v2/img/404.png" style="margin-left:80px;"/>
+</div>
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.clusters&amp;lang=ru-RU" type="text/javascript"></script>
+<script src="http://cms.indigointeractive.ru/json-terminal.php" type="text/javascript"></script>
+<script>
+	$(function(){
+
+		$('.slider').bxSlider({
+			auto: true
+		});
+
+		$(".st-all-term").click(function(){
+
+			if ($(this).hasClass("show-maps")) {
+				$(this).removeClass("show-maps");
+				$(".st-all-term-maps").hide();
+			} else {
+				$(this).addClass("show-maps");
+				$(".st-all-term-maps").show();
+			}
+
+		});
+
+		if ($(".search-input").data("search") == true) {
+			$(".search-input").autocomplete({
+								position:{my:"right top", at:"right bottom"},
+								minLength: 2,
+				source: function(request, response) {
+					var results = $.ui.autocomplete.filter(termListXY, request.term);
+
+					response(results.slice(0, 10));
+				},
+				focus: function(event, ui) {
+					$(".ui-autocomplete-input").val(ui.item[3]);
+				},
+				select: function( event, ui ) {
+					document.location.href = "http://"+ui.item[2]+".dzvr.ru";
+				},
+				change: function(event, ui) {
+					$(".search-input").val(ui.item[3]);
+				},
+				response: function(event, ui) {
+					if (ui.content.length === 0) {
+						$("#empty-message").html("<span>Ничего не найдено</span>").show();
+					} else {
+						$("#empty-message").html("").hide();
+					}
+				}
+			}).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+				return $("<li>").append('<a href="#">' + item[3] + '</a>').appendTo(ul);
+
+			};
+		} else {
+		}
+	});
+
+
+
+	ymaps.ready(init);
+
+	function init () {
+		var myMap = new ymaps.Map('map', {
+				center: [59.369315, 85.440191],
+				zoom: 3,
+				// Добавим к стандартным поведениям карты зум колесом мыши.
+				behaviors: ['default', 'scrollZoom']
+			});
+
+		myMap.controls.add('smallZoomControl', { top: 5 });
+
+		// Создаем кластеризатор c красной иконкой (по умолчанию используются синия).
+		var clusterer = new ymaps.Clusterer({preset: 'twirl#blueClusterIcons'}),
+			// Создаем коллекцию геообъектов.
+			collection = new ymaps.GeoObjectCollection();
+			// Дополнительное поле ввода при включенном режиме кластеризации.
+
+		// Добавляем кластеризатор на карту.
+		myMap.geoObjects.add(clusterer);
+
+		// Добавляем коллекцию геообъектов на карту.
+		myMap.geoObjects.add(collection);
+
+
+		// Добавление меток с произвольными координатами.
+		function addMarkers () {
+			var bounds = myMap.getBounds(),//,
+				gridSize = parseInt(100),
+
+				newPlacemarks = createGeoObjects(bounds);
+
+			if (gridSize > 0) {
+				clusterer.options.set({
+					gridSize: gridSize
+				});
+			}
+			clusterer.add(newPlacemarks);
+		}
+
+
+		// Функция, создающая необходимое количество геообъектов внутри указанной области.
+		function createGeoObjects (bounds) {
+			var placemarks = [];
+			for (var i in termListXY) {
+				coordinates = [termListXY[i][1],termListXY[i][0]];
+				// Создаем метку со случайными координатами.
+				myPlacemark = new ymaps.Placemark(//coordinates
+				[termListXY[i][1],termListXY[i][0]],
+				{
+					iconContent: '',
+					balloonContent:'<a href="http://'+termListXY[i][2]+'.dzvr.ru" target="_blank">'+termListXY[i][3]+'</a>',
+
+					hintContent: ''
+				},
+				{
+					iconImageHref: 'http://dzvr.ru/bitrix/templates/dzvr/img/ico-map-terminal.png'//, // картинка иконки
+				},
+				{
+					preset: 'twirl#blueIcon'
+				}
+				);
+				placemarks.push(myPlacemark);
+			}
+			return placemarks;
+		}
+		addMarkers();
+	}
+
+
+</script>
+<script>
+
+	ymaps.ready(init2);
+
+	function init2 () {
+	    var myMap = new ymaps.Map("first_map", {
+	            center: [, ],
+	            zoom: 14
+	        }),
+
+			myPlacemark = new ymaps.Placemark([, ], {
+				balloonContent: ''
+			}, {
+				iconImageHref: 'http://dzvr.ru/images/ico-terminal.png', // картинка иконки
+				iconImageSize: [37, 43], // размеры картинки
+				iconImageOffset: [-14, -55] // смещение картинки
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+	}
+
+</script>
+<div class="footer">
+<div class="copy">
+			© Дирекция Железнодорожных Вокзалов, 2009 - 2020 год<br/>
+            При использовании любых материалов ссылка на dzvr.ru обязательна
+		</div>
+<div class="lang"><a href="/en/">English version</a></div>
+</div>
+</div>
+</body>
+</html>

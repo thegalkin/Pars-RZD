@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Вокзал Улан-Удэ</title>
+<link href="http://dzvr.ru/styles/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/styles/css/style.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/styles/css/term.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/favicon.ico" rel="icon" type="image/x-icon"/>
+<script src="http://dzvr.ru/styles/js/jquery.min.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery.bxslider.min.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery.fancybox.pack.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="http://dzvr.ru/styles/js/main.js"></script>
+<script src="http://dzvr.ru/styles/js/term.js"></script>
+</head>
+<body>
+<div class="site">
+<div class="head">
+<a href="http://dzvr.ru" id="logo"></a>
+<div class="clr"></div>
+<div class="topSearch">
+<form>
+<input autocomplete="off" class="search-input ui-autocomplete-input" data-search="true" maxlength="60" name="terminal" placeholder="Введите название вокзала или города" type="text" value=""/>
+<input class="search-btn" type="submit" value="ИСКАТЬ"/>
+</form>
+<div class="allTerm st-all-term">
+<a href="#">все вокзалы россии</a>
+</div>
+<div class="st-all-term-maps grayBlock" style="width:1000px;">
+<div class="yandex-maps">
+<div id="map" style="width:1000px; height:340px"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="rowLeft">
+<div class="grayBlock">
+<div class="tabs-title tabmain tt-select" id="tab1"><span>О вокзале</span></div>
+<div class="tabs-title tabmap" id="tab2"><span>Как проехать</span></div>
+<div class="tabs-title tabrasp" id="tab3"><span>Расписание</span></div>
+<div class="tabs-title tabpano btn-panorama" id="tab5" panoramaurl="http://dzvr.ru/terminals/files/ulan-ude/panorama.html"><span>Панорамы</span></div>
+<br class="clr"/>
+</div>
+<div class="whiteBlock termInfo">
+<h1>Вокзал Улан-Удэ</h1><br/>
+				670024 Респ.Бурятия, г.Улан-Удэ, ул.Революции 1905г., 35 
+				<div class="tel-list">
+<h3>Телефоны</h3>
+<ul class="">
+<li><div class="iconlist-tel ico-tel"></div><b>Единая справочная</b><br/> <a href="tel:8(800)775-00-00" style="text-decoration:none; color:#000">8 (800) 775-00-00</a></li>
+<li><div class="iconlist-tel ico-tel"></div><b>Центр содействия мобильности:</b><br/> <a href="tel:8(800)775-00-00" style="text-decoration:none; color:#000">8 (800) 775-00-00</a> <span style="font-size:11px;">доб. 1</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="rowCenter">
+<div class="centerBlock terminal">
+<div class="tabs-cnt tabmain" id="tab1-cnt" style="display: block;">
+<style>
+</style>
+<ul class="slider">
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/345838276026.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/721205107454.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/913327745907.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/8251405726093.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/8851211310110.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/916322015425.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/840808592367.png);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/50160761155.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/26542934737.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/5651074621244.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/45941644509.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/702555127330.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/2091049837369.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/3281211598400.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/6091018938877.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/7181317504573.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/283252563006.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/114608598268.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/554456841738.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/8371371507375.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/3821402431795.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/765106991583.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/200215564531.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/284891944818.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/1811008689190.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/952690779675.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/907945999375.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/37611997506.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/964375401044.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/351589947105.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/323800502511.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/6933188042.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/7601185051791.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/273855496998.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/9181073008841.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/373625574147.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/30206346987.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/178813301792.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/4641119876772.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/7931352257314.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/97295958453.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/817585100120.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/ulan-ude/231102408942.jpg);"></div></li>
+</ul>
+<div class="serv-list">
+<h3>Сервисы</h3>
+<ul class="bullred first">
+<li>
+<span class="serv">Информационно-справочные услуги</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+     Рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Справочное бюро- круглосуточно, 1 этаж вокзала<br/>
+Письменная  справочная информация о расписании, маршруте движения поездов, расстоянии между станциями, прибытии поездов	55,0<br/>
+Письменная  справочная информация о стоимости проезда  в выбранном поезде  	55,0<br/>
+Письменная комплексная ж/д справка с подбором маршрута поезда,  стоимости проезда, пунктов пересадки  	80,0<br/>
+Информационное объявление  по вокзальному радио  (не рекламного характера) 	55,0<br/>
+Письменная справочная информация по городу Улан- удэ,  Иркутск, Тайшет, Северобайкальск  ( комплексная с подробным описанием маршрута проезда, стоимости услуг автотранспорта и др. )  	55,0<br/>
+Уведомление о доставке корреспонденции	45,0<br/>
+Подтверждение факта пребывания на вокзале	55,0<br/>
+Подтверждение факта  приобретения  железнодорожного проездного документа 	215,0<br/>
+Предоставление письменной информации по подбору сложного маршрута внутри страны и по странам СНГ	105,0<br/>
+Поздравительное объявление по громкоговорящей связи	105,0<br/>
+Предоставление медико-санитарного набора- 50 руб<br/>
+</span>
+</li>
+<li>
+<span class="serv">Услуги пребывания / проживания на вокзале</span>
+<span class="service_text">Внимание ! Комната отдыха открыта для посещения с 06.07.2020г. <br/>
+С 20 мая 2020 года до улучшения санитарно-эпидемиологической обстановки, при посещении общественных мест, при совершении поездок в транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте дистанцию не менее 1,5 метра! <br/>
+2 этаж вокзала. Круглосуточно. <br/>
+Проживание от 3 часов <br/>
+Пребывание в комнате отдыха «эконом - класса»/ 1 сутки/ 1 человек- 700 руб <br/>
+Предоставление койко-места в  3- х  местном номере /1 человек:	<br/>
+   - за 12 часов-870 руб <br/>
+  - за 24 часа- 1590 руб<br/>
+ -  последующий час- 60 руб<br/>
+Предоставление койко-места  в 2- местном номере/ 1 человек:	<br/>
+   - за 12 часов- 1050 руб <br/>
+  - за 24 часа- 	1950 руб<br/>
+ -  последующий час-75 руб <br/>
+Предоставление койко-места  в одноместном номере Люкс / 1 человек:	<br/>
+   - за 12 часов-1410 руб<br/>
+  - за 24 часа	2670 руб <br/>
+ -  последующий час - 105 руб <br/>
+Предоставление койко-места в  комнате для пассажиров с детьми  	<br/>
+  - за 12 часов-750 руб <br/>
+  - за 24 часа-1350 руб <br/>
+ -  последующий час-50 руб <br/>
+Предоставление койко-места в  комнате для МГН 	<br/>
+   - за 12 часов-1050 руб <br/>
+  - за 24 часа-1950 руб <br/>
+ -  последующий час - 75,0<br/>
+Пользование санитарно-бытовыми комнатами не для проживающих в КДО  (душ) не более 30 минут- 160 руб <br/>
+Предоставление дополнительного комплекта постельного белья- 150 руб <br/>
+Комплект одноразового постельного белья- 250 руб <br/>
+Предоставление медико-санитарного набора- 50 руб<br/>
+</span>
+</li>
+<li>
+<span class="serv">Услуги по хранению ручной клади и багажа</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+       В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Отдельно стоящее здание со стороны перрона. Круглосуточно <br/>
+Изменение с 01.01.2020г. <br/>
+Хранение каждого места ручной клади за одни  сутки( с момента сдачи)  - 180 руб,<br/>
+ последующие сутки - 180 руб.                                                                                                                                          <br/>
+за 1 час  - 50 руб.<br/>
+ Хранение каждого места крупногабаритной ручной клади за одни сутки - 200 руб.<br/>
+ - за последующие сутки- 220 руб., за 1 час  - 60 руб.<br/>
+ Утрата жетона - 300 руб.<br/>
+ Хранение забытых, найденных и  невостребованных вещей в камере хранения ( до 30 суток ) с одноразовой платой в размере одних  суток  - 180 руб.<br/>
+</span>
+</li>
+<li>
+<span class="serv">Коммуникационные услуги</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+     В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+2 этаж - восточное крыло <br/>
+Бизнес- зал- круглосуточно <br/>
+Прием и отправка почтовой корреспонденции вагонами формирования Восточно-Сибирского филиала ОАО "ФПК" (мелкая почтовая отправка) за пределы дороги -	410,0<br/>
+Прием и отправка почтовой корреспонденции вагонами формирования Восточно-Сибирского филиала ОАО "ФПК" (мелкая почтовая отправка) в пределах дороги -	285,0<br/>
+Прием и отправка почтовой корреспонденции вагонами формирования Восточно-Сибирского филиала ОАО "ФПК" (мелкая почтовая отправка) в пределах дороги, на ближайшее расстояние в пределах нескольких станций вокзалов ВС РДЖВ (250 км)- 145,0<br/>
+</span>
+</li>
+<li>
+<span class="serv">Офисные услуги</span>
+<span class="service_text">2 этаж - восточное крыло <br/>
+«Уважаемые пассажиры!<br/>
+      В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Бизнес- зал- круглосуточно <br/>
+Изготовление ксерокопий - от 15,0 до 17,0 </span>
+</li>
+<li>
+<span class="serv">Санитарно-гигиенические услуги</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+         В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+1 этаж вокзала - Круглосуточно <br/>
+Посещение санитарно-гигиенической комнаты - бесплатно<br/>
+Душ- 160,0 <br/>
+</span>
+</li>
+<li>
+<span class="serv">Услуги бытового обслуживания</span>
+<span class="service_text">Внимание ! Комната отдыха открыта для посещения с 06.07.2020г. <br/>
+С 20 мая 2020 года до улучшения санитарно-эпидемиологической обстановки, при посещении общественных мест, при совершении поездок в транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте дистанцию не менее 1,5 метра! «Уважаемые пассажиры!<br/>
+       Круглосуточно <br/>
+2 этаж вокзал <br/>
+Комплект одноразового постельного белья- 250 руб <br/>
+Предоставление медико-санитарного набора- 50 руб<br/>
+</span>
+</li>
+<li>
+<span class="serv">Розыск утерянного</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+         В целях обеспечения безопасности защиты здоровья населения и нераспространения новой коронавирусной инфекции   введен режим функционирования повышенной готовности  по предупреждению и ликвидации чрезвычайной ситуации.<br/>
+          В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Уважаемые пассажиры, в случае потери багажа или ребенка обращайтесь к любому сотруднику вокзала!</span>
+</li>
+<li>
+<span class="serv">Линейный отдел полиции</span>
+<span class="service_text">Пост- круглосуточно в здании вокзала </span>
+</li>
+<li>
+<span class="serv">Банкоматы</span>
+<span class="service_text">ВТБ  в зале ожидания 1 этаж </span>
+</li>
+<li>
+<span class="serv">Услуги носильщиков</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+ Оформление заказа у дежурного помощника начальника вокзала <br/>
+Перенос (перевозка) 1 места ручной клади: - в пределах привокзальной площади	75,0<br/>
+Перенос (перевозка) 1 места крупногабаритных вещей: - в пределах привокзальной площади	170,0<br/>
+Доставка багажа в вагон и из вагона/  весом до 10 кг за 1 место	55,0<br/>
+Доставка багажа в вагон и из вагона/  весом свыше 10 кг за 1 место	105,0<br/>
+</span>
+</li>
+<li>
+<span class="serv">Выдача справки о приобретенном ранее или утерянном билете</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+         В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+При личной явке  с документом удостоверяющем личность- дежурный помощник начальника вокзала </span>
+</li>
+<li>
+<span class="serv">Зона отдыха для пассажиров</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+      В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+1, 2 этаж - круглосуточно <br/>
+Предоставление медико-санитарного набора- 50 руб<br/>
+</span>
+</li>
+</ul><ul class="bullred"> <li>
+<span class="serv">Бронирование мест в комнатах отдыха</span>
+<span class="service_text">Внимание ! Комната отдыха открыта для посещения с 06.07.2020г. <br/>
+С 20 мая 2020 года до улучшения санитарно-эпидемиологической обстановки, при посещении общественных мест, при совершении поездок в транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте дистанцию не менее 1,5 метра! <br/>
+8 (3012)252-462<br/>
+8(3012)28-21-19,  8(3012)28-24-60</span>
+</li>
+<li>
+<span class="serv">Кафе</span>
+<span class="service_text">Внимание! На основании Плана мероприятий по предупреждению завоза и распространения новой коронавирусной инфекции в ОАО «РЖД», работа временно прекращена  .  </span>
+</li>
+<li>
+<span class="serv">Магазины</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+         В целях обеспечения безопасности защиты здоровья населения и нераспространения новой коронавирусной инфекции  введен режим функционирования повышенной готовности  по предупреждению и ликвидации чрезвычайной ситуации.<br/>
+          В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Привокзальная площадь с 06:00 до 22:00</span>
+</li>
+<li>
+<span class="serv">Медпункт</span>
+<span class="service_text">Круглосуточно </span>
+</li>
+<li>
+<span class="serv">Оформление проездных документов на поезда дальнего следования</span>
+<span class="service_text">1 этаж <br/>
+«Уважаемые пассажиры!<br/>
+       В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! </span>
+</li>
+<li>
+<span class="serv">Оформление проездных документов на поезда пригородного сообщения</span>
+<span class="service_text">Отдельно стоящее здание ( запад) «Уважаемые пассажиры!<br/>
+      В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! </span>
+</li>
+<li>
+<span class="serv">VIP-Сопровождение</span>
+<span class="service_text">1 этаж дежурный помощник начальника вокзала<br/>
+«Уважаемые пассажиры!<br/>
+         В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+</span>
+</li>
+<li>
+<span class="serv">Услуги оказания помощи и сопровождения маломобильным пассажирам</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+         В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Дежурный помощник начальника вокзала 1 этаж</span>
+</li>
+<li>
+<span class="serv">Прием-отправка грузобагажа на особых условиях (малые почтовые отправления)</span>
+<span class="service_text">«Уважаемые пассажиры!<br/>
+       В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+Дежурный помощник начальника вокзала- 1 этаж , дежурный по залу - 2 этаж<br/>
+Прием и отправка почтовой корреспонденции вагонами формирования Восточно-Сибирского филиала ОАО "ФПК" (мелкая почтовая отправка) за пределы дороги -	410,0<br/>
+Прием и отправка почтовой корреспонденции вагонами формирования Восточно-Сибирского филиала ОАО "ФПК" (мелкая почтовая отправка) в пределах дороги -	285,0<br/>
+Прием и отправка почтовой корреспонденции вагонами формирования Восточно-Сибирского филиала ОАО "ФПК" (мелкая почтовая отправка) в пределах дороги, на ближайшее расстояние в пределах нескольких станций вокзалов ВС РДЖВ (250 км)- 145,0<br/>
+</span>
+</li>
+<li>
+<span class="serv">Бизнес зал</span>
+<span class="service_text">Открыт для посещения с 16.05.2020г<br/>
+Услуги размещения в Бизнес – зале предоставляются в круглосуточном режиме при отсутствии температуры и признаков ОРВИ и при наличии СИЗ у посетителей<br/>
+2 этаж  вокзала . Стоимость 100 руб / час. в стоимость входит "посадочное место для отдыха <br/>
+пользование СБК, в том числе душем, <br/>
+зарядка мобильных телефонов и гаджетов, прочих аксессуаров, имеющих зарядные батареи<br/>
+предоставление печатной продукции в ассортименте<br/>
+просмотр телепередач<br/>
+предоставление беспроводного доступа в сеть Интернет (Wi-Fi)<br/>
+пользование устройством для чистки обуви<br/>
+вызов носильщика<br/>
+Предоставление медико-санитарного набора- 50 руб<br/>
+<br/>
+</span>
+</li>
+<li>
+<span class="serv">Зарядка мобильных устройств</span>
+<span class="service_text">Зал ожидания. Услуга предоставляется без оплаты  </span>
+</li>
+<li>
+<span class="serv">Прием-отправка грузобагажа</span>
+<span class="service_text"> «Уважаемые пассажиры!<br/>
+       В период с 20 мая 2020 года  до улучшения санитарно-эпидемиологической обстановки, при посещении  общественных мест,  при совершении поездок в  транспорте рекомендовано использовать средства индивидуальной защиты органов дыхания (медицинские или гигиенические маски).<br/>
+Соблюдайте  дистанцию не менее 1,5 метра! <br/>
+дежурный помощник начальника вокзала 1 этаж вокзала <br/>
+Прием и отправка грузобагажа от 400 руб  до 1200 руб , дополнительный сбор от 250 руб до 1000 руб </span>
+</li>
+<li>
+<span class="serv">Детская игровая комната</span>
+<span class="service_text">На основании Плана мероприятий по предупреждению завоза и распространения новой коронавирусной инфекции в ОАО «РЖД»  ДЕТСКАЯ  КОМНАТА  ВРЕМЕННО  ЗАКРЫТА! <br/>
+<br/>
+2 этаж вокзала бизнес- зал  </span>
+</li>
+</ul>
+</div>
+<br class="clr"/>
+<div class="text-block">
+
+						В настоящее время производится реконструкция зданий и пассажирских платформ вокзального комплекса. На территории вокзального комплекса расположена касса, адаптированная под МГН, касса №5 оборудована в кассовом зале.
+					</div>
+</div>
+<div class="tabs-cnt nopadding" id="tab2-cnt">
+<div id="yandex_map" style="width:500px; height:290px;">
+<div id="first_map" style="width:500px; height:290px"></div>
+</div>
+<div class="adr-text">
+<h3>
+												Адрес</h3>
+<p>670024 Респ.Бурятия, г.Улан-Удэ, ул.Революции 1905г., 35 </p>
+<h3>Время работы</h3> круглосуточно
+						
+					</div>
+</div>
+<div class="tabs-cnt nopadding" id="tab3-cnt">
+<iframe frameborder="0" height="1000" onload="this.height = (this.contentDocument || this.contentWindow.document).body.offsetHeight" src="http://rasp.yandex.ru/informers/station/9611729/?size=25&amp;color=1&amp;type=train" style="overflow: hidden; border: 0; -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);" width="500"></iframe>
+</div>
+<div class="tabs-cnt nopadding" id="tab5-cnt" style="text-align:center;">
+<div id="panorama">
+<iframe border="0" height="420" src="" width="500">
+							Ваш браузер не поддерживает плавающие фреймы!
+						 </iframe>
+</div>
+<div id="panorama_full"><span class="pOpen">На весь экран</span><span class="pClose">Свернуть</span></div>
+</div>
+<div class="tabs-cnt passport" id="tab9-cnt">
+<div class="pass-tabs">
+<div class="pass-tabs-title ptt-sel" id="pass-tab-1">Доступность</div>
+<div class="pass-tabs-title" id="pass-tab-2">Фотографии</div>
+<div class="clear"></div>
+<div class="pass-tabs-cnt" id="pass-tab-1-cnt" style="display:block;">
+<table border="0" class="pass-rate">
+<tr>
+<td height="46" width="235">
+</td>
+<td><div class="pass-ico pass-ico-info ico-1"></div></td>
+<td><div class="pass-ico pass-ico-info ico-2"></div></td>
+<td><div class="pass-ico pass-ico-info ico-3"></div></td>
+<td><div class="pass-ico pass-ico-info ico-4"></div></td>
+</tr>
+<tr>
+<td>
+<span class="availabiItems">Доступность элементов:</span>
+</td>
+<td><div class="pass-ico pass-ico-big" id="passType1"></div><div class="pass-ico ico-vLine"></div><div class="pass-ico ico-gLine"></div></td>
+<td><div class="pass-ico pass-ico-big" id="passType2"></div><div class="pass-ico ico-vLine"></div><div class="pass-ico ico-gLine"></div></td>
+<td><div class="pass-ico pass-ico-big" id="passType3"></div><div class="pass-ico ico-vLine"></div><div class="pass-ico ico-gLine"></div></td>
+<td><div class="pass-ico pass-ico-big" id="passType4"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Парковки
+											
+																						<div class="passport-desc">
+<h3>													Парковки
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Парковка расположена на привокзальной площади напротив здания вокзала, имеются парковочные места для инвалидов, места   обозначено дорожным знаком и разметкой. Протяженность парковочных мест 40 м. Расстояние от парковки до входа в вокзал 20 м.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Привокзальная площадь
+											
+																						<div class="passport-desc">
+<h3>													Привокзальная площадь
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Обеспечена достаточная ширина проходов на путях движения
+маломобильных пассажиров, имеется пространство для разворота кресла-коляски.
+Ширина пути пешеходного движения не менее 2 м, продольный уклон отсутствует.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Входные группы
+											
+																						<div class="passport-desc">
+<h3>													Входные группы
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Вход в здание вокзала осуществляется со стороны привокзальной площади и перрона, вход свободный, не имеет  вертикальных препятствий. Ширина дверных проемов более 0,9 м.
+На входных группах установлены доводчики, обеспечивающие легкое открытие дверей и плавное закрытие.
+Вход в здание вокзала со стороны города доступен (лестницы, уклоны отсутствуют), вход со стороны перрона доступен (лестницы, уклоны отсутствуют), пандусы отсутствуют"
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Пути движения
+											
+																						<div class="passport-desc">
+<h3>													Пути движения
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Обеспечена достаточная ширина проходов на путях движения маломобильных пассажиров, имеется пространство для разворота кресла-коляски.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Туалетные комнаты
+											
+																						<div class="passport-desc">
+<h3>													Туалетные комнаты
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Имеется санитарная комната для инвалидов в здании туалета на перроне.
+Душевая отсутствует.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Залы ожидания
+											
+																						<div class="passport-desc">
+<h3>													Залы ожидания
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Имеется зона ожидания для МГН, обозначенная знаком доступности. 
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Кассы
+											
+																						<div class="passport-desc">
+<h3>													Кассы
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Имеется специальная адаптированная касса №5 для МГН.
+ Установлено индукционное оборудование для пассажиров с нарушением слуха. Кассы оборудованы переговорными устройствами "пассажир-кассир".
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Камеры хранения
+											
+																						<div class="passport-desc">
+<h3>													Камеры хранения
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Камера хранения стационарная, обслуживается кладовщиком.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Комнаты отдыха
+											
+																						<div class="passport-desc">
+<h3>													Комнаты отдыха
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Имеется  адаптированная комната длительного отдыха для МГН.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Платформы
+											
+																						<div class="passport-desc">
+<h3>													Платформы
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Выход на островные платформы осуществляется через западный и восточный переезды с сопровождением.
+На кромках перрона имеются предупредительные сигнальные полосы.
+Для посадки с низкой платформы установлен вертикальный мобильный подъемник VTPM mobile.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Коммерческие помещения
+											
+																						<div class="passport-desc">
+<h3>													Коммерческие помещения
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Входные группы адаптированы для МГН.
+В зонах приема пищи имеются столики высотой от уровня пола не более 0,85м.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Информация и навигация
+											
+																						<div class="passport-desc">
+<h3>													Информация и навигация
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Окно  дежурного по выдаче справок  оснащено  телефоном  для граждан с  пониженным слухом.
+Имеется индукционная петля в справочном бюро.
+Использование для информирования пассажиров указателей, табло и пиктограмм, громкоговорителей (визуальные и акустические системы).
+Вся звуковая информация дублируется визуальной на табло.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Средства транспортировки
+											
+																						<div class="passport-desc">
+<h3>													Средства транспортировки
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Лифты в наличии, в настоящее время не работают в связи с проведением реконструкцией  вокзального комплекса.
+Для транспортировки по вокзальному комплексу имеется кресло-коляска, носилки, подъемник, переносные аппарели. Для получения технических средств необходимо обратиться к дежурному персоналу.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div></td>
+</tr>
+<script>
+								$(function(){
+
+									for(var i = 1; i < 5; i++){
+										var type0 = $(".icoLineType"+i+" div").hasClass("ico-color0");
+										var type1 = $(".icoLineType"+i+" div").hasClass("ico-color1");
+										var type2 = $(".icoLineType"+i+" div").hasClass("ico-color2");
+
+
+										if (!type0 && !type1) {
+											$("#passType"+i).addClass("ico-green-big");
+										} else if (type0 && type1 && type2) {
+											$("#passType"+i).addClass("ico-orange-big");
+										} else if (type0 && !type1 && !type2) {
+											 $("#passType"+i).addClass("ico-red-big");
+										} else if (!type0 && type1 && type2) {
+											$("#passType"+i).addClass("ico-orange-big");
+										} else {
+											$("#passType"+i).addClass("ico-orange-big");
+										}
+
+									}
+									var type0 = 0;
+									var type1 = 1;
+									var type2 = 2;
+									var all = 0;
+									for(var i = 1; i < 5; i++){
+										if ($("#passType"+i).hasClass("ico-red-big"))   all = all + type0;
+										if ($("#passType"+i).hasClass("ico-orange-big")) all = all + type1;
+										if ($("#passType"+i).hasClass("ico-green-big")) all = all + type2;
+									}
+									var percent = (all*50/4);
+									if (percent == 100) $("#percentRateTop").addClass("pR-1");
+									if (percent < 100 && percent > 49) $("#percentRateTop").addClass("pR-2");
+									if (percent < 50) $("#percentRateTop").addClass("pR-3");
+
+								});
+								</script>
+</table>
+<br/>
+							Оформить заявку на оказание услуг помощи и сопровождения можно круглосуточно без выходных дней по бесплатному федеральному номеру Центра содействия мобильности ОАО "РЖД" <a href="tel:8(800)775-00-00" style="text-decoration:none; color:#c4181f">8(800)775-00-00</a> (доб. 1). <br/>С подробной информацией можно ознакомиться по <a href="http://pass.rzd.ru/static/public/ru?STRUCTURE_ID=5284&amp;layer_id=3290&amp;refereLayerId=3290&amp;id=2336" style="color:#c4181f" target="_blank">ссылке</a><br/><br/>
+Перечень вокзалов, задействованных в работе ЦСМ РЖД, постоянно расширяется, за уточнением обращайтесь к оператору по указанному телефону.
+						</div>
+<div class="pass-tabs-cnt" id="pass-tab-2-cnt">
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/ulan-ude/pa-b-мгн 005.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/ulan-ude/pa-m-croppedImg_841845778.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/ulan-ude/pa-b-мгн 002.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/ulan-ude/pa-m-croppedImg_800182203.jpeg"/></a>
+</div>
+</div>
+<br class="clear"/>
+</div>
+<br class="clear"/>
+</div>
+</div>
+<div class="rowRight">
+<div class="link-wifi">
+					Wi-Fi на вокзале					<div class="block-wifi"><p>На всей территории вокзала - бесплатный Wi-Fi.</p></div>
+</div>
+<div class="link-passport tabpa" id="tab9">Электронный паспорт доступности вокзала</div>
+</div>
+<br style="clear:both;"/>
+</div>
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.clusters&amp;lang=ru-RU" type="text/javascript"></script>
+<script src="http://cms.indigointeractive.ru/json-terminal.php" type="text/javascript"></script>
+<script>
+	$(function(){
+
+		$('.slider').bxSlider({
+			auto: true
+		});
+
+		$(".st-all-term").click(function(){
+
+			if ($(this).hasClass("show-maps")) {
+				$(this).removeClass("show-maps");
+				$(".st-all-term-maps").hide();
+			} else {
+				$(this).addClass("show-maps");
+				$(".st-all-term-maps").show();
+			}
+
+		});
+
+		if ($(".search-input").data("search") == true) {
+			$(".search-input").autocomplete({
+								position:{my:"right top", at:"right bottom"},
+								minLength: 2,
+				source: function(request, response) {
+					var results = $.ui.autocomplete.filter(termListXY, request.term);
+
+					response(results.slice(0, 10));
+				},
+				focus: function(event, ui) {
+					$(".ui-autocomplete-input").val(ui.item[3]);
+				},
+				select: function( event, ui ) {
+					document.location.href = "http://"+ui.item[2]+".dzvr.ru";
+				},
+				change: function(event, ui) {
+					$(".search-input").val(ui.item[3]);
+				},
+				response: function(event, ui) {
+					if (ui.content.length === 0) {
+						$("#empty-message").html("<span>Ничего не найдено</span>").show();
+					} else {
+						$("#empty-message").html("").hide();
+					}
+				}
+			}).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+				return $("<li>").append('<a href="#">' + item[3] + '</a>').appendTo(ul);
+
+			};
+		} else {
+		}
+	});
+
+
+
+	ymaps.ready(init);
+
+	function init () {
+		var myMap = new ymaps.Map('map', {
+				center: [59.369315, 85.440191],
+				zoom: 3,
+				// Добавим к стандартным поведениям карты зум колесом мыши.
+				behaviors: ['default', 'scrollZoom']
+			});
+
+		myMap.controls.add('smallZoomControl', { top: 5 });
+
+		// Создаем кластеризатор c красной иконкой (по умолчанию используются синия).
+		var clusterer = new ymaps.Clusterer({preset: 'twirl#blueClusterIcons'}),
+			// Создаем коллекцию геообъектов.
+			collection = new ymaps.GeoObjectCollection();
+			// Дополнительное поле ввода при включенном режиме кластеризации.
+
+		// Добавляем кластеризатор на карту.
+		myMap.geoObjects.add(clusterer);
+
+		// Добавляем коллекцию геообъектов на карту.
+		myMap.geoObjects.add(collection);
+
+
+		// Добавление меток с произвольными координатами.
+		function addMarkers () {
+			var bounds = myMap.getBounds(),//,
+				gridSize = parseInt(100),
+
+				newPlacemarks = createGeoObjects(bounds);
+
+			if (gridSize > 0) {
+				clusterer.options.set({
+					gridSize: gridSize
+				});
+			}
+			clusterer.add(newPlacemarks);
+		}
+
+
+		// Функция, создающая необходимое количество геообъектов внутри указанной области.
+		function createGeoObjects (bounds) {
+			var placemarks = [];
+			for (var i in termListXY) {
+				coordinates = [termListXY[i][1],termListXY[i][0]];
+				// Создаем метку со случайными координатами.
+				myPlacemark = new ymaps.Placemark(//coordinates
+				[termListXY[i][1],termListXY[i][0]],
+				{
+					iconContent: '',
+					balloonContent:'<a href="http://'+termListXY[i][2]+'.dzvr.ru" target="_blank">'+termListXY[i][3]+'</a>',
+
+					hintContent: ''
+				},
+				{
+					iconImageHref: 'http://dzvr.ru/bitrix/templates/dzvr/img/ico-map-terminal.png'//, // картинка иконки
+				},
+				{
+					preset: 'twirl#blueIcon'
+				}
+				);
+				placemarks.push(myPlacemark);
+			}
+			return placemarks;
+		}
+		addMarkers();
+	}
+
+
+</script>
+<script>
+
+	ymaps.ready(init2);
+
+	function init2 () {
+	    var myMap = new ymaps.Map("first_map", {
+	            center: [51.840507, 107.58222],
+	            zoom: 14
+	        }),
+
+			myPlacemark = new ymaps.Placemark([51.840507, 107.58222], {
+				balloonContent: 'Вокзал Улан-Удэ'
+			}, {
+				iconImageHref: 'http://dzvr.ru/images/ico-terminal.png', // картинка иконки
+				iconImageSize: [37, 43], // размеры картинки
+				iconImageOffset: [-14, -55] // смещение картинки
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+	}
+
+</script>
+<div class="footer">
+<div class="copy">
+			© Дирекция Железнодорожных Вокзалов, 2009 - 2020 год<br/>
+            При использовании любых материалов ссылка на dzvr.ru обязательна
+		</div>
+<div class="lang"><a href="/en/">English version</a></div>
+</div>
+</div>
+</body>
+</html>

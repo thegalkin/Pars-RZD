@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Вокзал Екатеринбург</title>
+<link href="http://dzvr.ru/styles/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/styles/css/style.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/styles/css/term.css" rel="stylesheet"/>
+<link href="http://dzvr.ru/favicon.ico" rel="icon" type="image/x-icon"/>
+<script src="http://dzvr.ru/styles/js/jquery.min.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery.bxslider.min.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery.fancybox.pack.js"></script>
+<script src="http://dzvr.ru/styles/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="http://dzvr.ru/styles/js/main.js"></script>
+<script src="http://dzvr.ru/styles/js/term.js"></script>
+</head>
+<body>
+<div class="site">
+<div class="head">
+<a href="http://dzvr.ru" id="logo"></a>
+<div class="clr"></div>
+<div class="topSearch">
+<form>
+<input autocomplete="off" class="search-input ui-autocomplete-input" data-search="true" maxlength="60" name="terminal" placeholder="Введите название вокзала или города" type="text" value=""/>
+<input class="search-btn" type="submit" value="ИСКАТЬ"/>
+</form>
+<div class="allTerm st-all-term">
+<a href="#">все вокзалы россии</a>
+</div>
+<div class="st-all-term-maps grayBlock" style="width:1000px;">
+<div class="yandex-maps">
+<div id="map" style="width:1000px; height:340px"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="rowLeft">
+<div class="grayBlock">
+<div class="tabs-title tabmain tt-select" id="tab1"><span>О вокзале</span></div>
+<div class="tabs-title tabmap" id="tab2"><span>Как проехать</span></div>
+<div class="tabs-title tabrasp" id="tab3"><span>Расписание</span></div>
+<div class="tabs-title tabpano btn-panorama" id="tab5" panoramaurl="http://dzvr.ru/terminals/files/sverdlovsk/panorama.html"><span>Панорамы</span></div>
+<div class="tabs-title tabmap" id="tab6"><span>Схема вокзала</span></div>
+<br class="clr"/>
+</div>
+<div class="whiteBlock termInfo">
+<h1>Вокзал Екатеринбург</h1><br/>
+				620027, Свердловская обл., г. Екатеринбург, ул. Вокзальная, д.22 
+				<div class="tel-list">
+<h3>Телефоны</h3>
+<ul class="">
+<li><div class="iconlist-tel ico-tel"></div><b>Единая справочная</b><br/> <a href="tel:8(800)775-00-00" style="text-decoration:none; color:#000">8 (800) 775-00-00</a></li>
+<li><div class="iconlist-tel ico-tel"></div><b>Центр содействия мобильности:</b><br/> <a href="tel:8(800)775-00-00" style="text-decoration:none; color:#000">8 (800) 775-00-00</a> <span style="font-size:11px;">доб. 1</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="rowCenter">
+<div class="centerBlock terminal">
+<div class="tabs-cnt tabmain" id="tab1-cnt" style="display: block;">
+<style>
+</style>
+<ul class="slider">
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/95319478935.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/43221733154.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/8431407279805.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/705143021947.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/482850101921.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/842708003288.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/9541275075183.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/800995438200.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/6971271051812.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/451168100803.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/998214007334.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/8841160269968.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/516691222962.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/5415522002.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/9691075214985.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/881647707572.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/329162425730.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/7590681546.jpg);"></div></li>
+<li style=""><div style="width:100%; height:300px;background-size: cover; background-position: top center;  background-repeat:no-repeat; background-image:url(http://cms.indigointeractive.ru/files/sverdlovsk/632479465672.jpg);"></div></li>
+</ul>
+<div class="serv-list">
+<h3>Сервисы</h3>
+<ul class="bullred first">
+<li>
+<span class="serv">Информационно-справочные услуги</span>
+<span class="service_text">Услуга предоставляется на информационных стойках на 3 этаже задания вокзала.<br/>
+Режим работы - круглосуточно. <br/>
+Объявление, до 10 слов (не носящее рекламный характер) - 100 руб.<br/>
+Архивная письменная справка о факте приобретения ПД - 190 руб.<br/>
+Архивная письменная справка о стоимости проезда (30 и более суток) - 150 руб.<br/>
+Письменная справка о маршруте проезда:<br/>
+- прямой - 60 руб.<br/>
+- с пересадками - 100 руб.<br/>
+Письменная справка о наличие свободных мест на момент обращения - 60 руб.<br/>
+Письменная справка о стоимости проезда - 120 руб.<br/>
+Письменное постанционное расписание движения конкретного поезда - 110 руб.<br/>
+Предоставление письменной справки по городу - 110 руб.<br/>
+Справка предоставления адресов миграционной службы - 60 руб.<br/>
+Предоставление справки, подтверждающей возврат проездных документов - 170 руб.<br/>
+Письменная справка об отсутствии беспересадочного сообщения - 60 руб.<br/>
+Письменная справка о категории поезда - 60 руб.<br/>
+Письменная  справка о стоимости сервисных услуг в поездах дальнего следования - 70 руб.</span>
+</li>
+<li>
+<span class="serv">Объявление информации по громкой связи</span>
+<span class="service_text">Услуга осуществляется на всей территории вокзала, круглосуточно</span>
+</li>
+<li>
+<span class="serv">Услуги по хранению ручной клади и багажа</span>
+<span class="service_text">Режим работы - круглосуточно.<br/>
+Автоматические камеры хранения - центральный досмотровый павильон, вход с привокзальной площади<br/>
+Автоматические камеры хранения - первый час 190 руб., каждый последующий час 80 руб.,  сутки 350 руб.<br/>
+Утрата жетона - 200 руб.<br/>
+Вскрытие ячейки - 190 руб.</span>
+</li>
+<li>
+<span class="serv">Санитарно-гигиенические услуги</span>
+<span class="service_text">Услуга оказывается на 1 этаже здания вокзала.<br/>
+Режим работы - круглосуточно.<br/>
+Пользование душем в Бизнес зале, до 30 минут - 150 руб.</span>
+</li>
+<li>
+<span class="serv">Место для пеленания ребенка</span>
+<span class="service_text">Услуга предоставляется бесплатно и располагается в зале ожидания на 3 этаже основного здания вокзала и на 4 этаже здания вокзале в Комнате длительного отдыха.<br/>
+Режим работы зала ожидания - круглосуточно</span>
+</li>
+<li>
+<span class="serv">Линейный отдел полиции</span>
+<span class="service_text">Располагается на 1 платформе.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Банкоматы</span>
+<span class="service_text">Банкоматы расположены на 1 и 3 этаже здания вокзала.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Услуги носильщиков</span>
+<span class="service_text">Перенос ручной клади и крупногабаритных вещей (в пределах привокзальной площади, за пределы привокзальной площади), 1 место - 200 руб.<br/>
+тел. 8-800-775-00-00</span>
+</li>
+<li>
+<span class="serv">Кафе</span>
+<span class="service_text">На 1 этаже здания вокзала располагается кафе "Mr. Lunch", кафе-пекарня "Добрый пекарь", ресторан быстрого питания "Бургер Кинг" и ресторан быстрого обслуживания "Вилка-Ложка".<br/>
+На 2 этаже кафе ООО "Пикник-Т".<br/>
+На 1 и 3 этажах в торговых галереях расположены кофейни.</span>
+</li>
+<li>
+<span class="serv">Магазины</span>
+<span class="service_text">На территории вокзального комплекса расположены магазины "Товары в дорогу", "Сувениры".<br/>
+На 1 этаже расположен магазин "Аленка", киоск печатной продукции, сувениры. <br/>
+На 1 этаже в центральном холле располагаются киоски с печатной продукцией и сувенирами.<br/>
+На 2 этаже расположены салоны сотовой связи, товары в дорогу, магазин подарков.<br/>
+На 3 этаже торговая галерея, в которой размещены объекты розничной торговли, товары в дорогу.<br/>
+На 2, 3 и 4 платформа расположены торговые павильоны.</span>
+</li>
+<li>
+<span class="serv">Медпункт</span>
+<span class="service_text">Располагается в зале ожидания на 1 этаже основного здания вокзала.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+																								Wi-Fi
+															
+							</li>
+<li>
+<span class="serv">Парковка автотранспорта</span>
+<span class="service_text">Парковка легкового автомобиля, 1 место:<br/>
+- до 1 часа - 80 руб.<br/>
+- до 2 часов - 130 руб.<br/>
+до 24 часов - 300 руб.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+</ul><ul class="bullred"> <li>
+<span class="serv">Парикмахерская</span>
+<span class="service_text">Парикмахерская "Fix стрижки" располагается на 3 этаже здания вокзала. <br/>
+Режим работы: 09.00 - 20.00, местного времени.</span>
+</li>
+<li>
+<span class="serv">Комната длительного отдыха</span>
+<span class="service_text">Внимание! В связи с проводимыми противоэпидемическими  мероприятиями комнаты отдыха временно закрыты до отмены.<br/>
+Приносим свои извинения!  <br/>
+<br/>
+КДО располагаются на 4, 5 этажах здания вокзала, режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Оформление проездных документов на поезда дальнего следования</span>
+<span class="service_text">Располагается на 3 этаже.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Оформление проездных документов на поезда пригородного сообщения</span>
+<span class="service_text">Располагается на 1 этаже.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Прием-отправка грузобагажа на особых условиях (малые почтовые отправления)</span>
+<span class="service_text">Услуга оказывается на стойке информации, расположенной на 3 этаже основного здания вокзала.<br/>
+Режим работы - круглосуточно.<br/>
+К отправке принимается грузобагаж весом до 30 кг.<br/>
+Отправка осуществляется поездами формирования АО "ФПК"</span>
+</li>
+<li>
+<span class="serv">Зал повышенной комфортности</span>
+<span class="service_text">"Антикафе 1520 мм" расположено на 3 этаже здания вокзала.<br/>
+Режим работы - круглосуточно.<br/>
+Пребывание в "Антикафе 1520 мм", 1 место:<br/>
+- за 1 час - 100 руб.<br/>
+- за каждую последующую минуту - 1 руб.<br/>
+- дети до 5 лет - бесплатно.</span>
+</li>
+<li>
+<span class="serv">Вендинговые аппараты</span>
+<span class="service_text">Вендинговые аппараты расположены на 1 и 3 этажах здания вокзала.</span>
+</li>
+<li>
+<span class="serv">Туалет (санитарные комнаты)</span>
+<span class="service_text">Санитарно-бытовых комнаты расположены:<br/>
+В центральном подъезде, на 1 этаже, при входе в тоннель № 2, на 3 этаже между залами ожидания и на 3 этаже в зале ожидания для пассажиров с детьми.<br/>
+Услуга предоставляется бесплатно.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Церковная лавка</span>
+<span class="service_text">Располагается на 2 этаже здания вокзала.</span>
+</li>
+<li>
+<span class="serv">Бизнес зал</span>
+<span class="service_text">Располагается на 1 этаже основного здания вокзала.<br/>
+Режим работы - круглосуточно.<br/>
+Дети до 5 лет - бесплатно.<br/>
+Пребывание в бизнес зале(взрослый/детский):<br/>
+- за первый час (с предоставлением на выбор 1 чашки кофе или 1 чашки чая) - 200/100 руб.<br/>
+- за второй час - 120/60 руб.<br/>
+- за третий час - 110/50 руб.<br/>
+- за четвертый час - 100/50 руб.<br/>
+- за пятый час - 90/40 руб.<br/>
+- за каждый последующий час - 80/40 руб.</span>
+</li>
+<li>
+<span class="serv">Детский игровой уголок</span>
+<span class="service_text">Внимание! В связи с проводимыми противоэпидемическими  мероприятиями детская зона временно закрыта до отмены.<br/>
+Приносим свои извинения!  <br/>
+<br/>
+Располагается на 3 этаже.<br/>
+Режим работы - круглосуточно.</span>
+</li>
+<li>
+<span class="serv">Зарядка мобильных устройств</span>
+<span class="service_text">Зарядные станции расположены во всех залах ожидания.<br/>
+Услуга предоставляется бесплатно, в круглосуточном режиме. </span>
+</li>
+</ul>
+</div>
+<br class="clr"/>
+</div>
+<div class="tabs-cnt nopadding" id="tab2-cnt">
+<div id="yandex_map" style="width:500px; height:290px;">
+<div id="first_map" style="width:500px; height:290px"></div>
+</div>
+<div class="adr-text">
+<h3>
+												Адрес</h3>
+<p>620027, Свердловская обл., г. Екатеринбург, ул. Вокзальная, д.22 </p>
+<h3>Время работы</h3> круглосуточно
+						
+					</div>
+</div>
+<div class="tabs-cnt nopadding" id="tab3-cnt">
+<iframe frameborder="0" height="1000" onload="this.height = (this.contentDocument || this.contentWindow.document).body.offsetHeight" src="http://rasp.yandex.ru/informers/station/9607404/?size=25&amp;color=1&amp;type=train" style="overflow: hidden; border: 0; -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);" width="500"></iframe>
+</div>
+<div class="tabs-cnt nopadding" id="tab6-cnt" style="display:block; height: 100%;">
+<input id="terminal_id" type="hidden" value="282"/>
+<input id="terminal_lang" type="hidden" value="ru"/>
+<!-- Stylesheets -->
+<link href="http://dzvr.ru/styles/maps/css/maps.css" rel="stylesheet" type="text/css"/>
+<!-- Scripts -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+<script src="http://dzvr.ru/styles/maps/js/hammer.min.js" type="text/javascript"></script>
+<script src="http://dzvr.ru/styles/maps/js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="http://dzvr.ru/styles/maps/js/maps.js" type="text/javascript"></script>
+<div class="map-container">
+<!--<div class="service-list-button"></div>-->
+<div id="maps"></div>
+</div>
+<br style="clear:both;"/>
+<script type="text/javascript">
+							$(document).ready(function() {
+
+								var map = $('#maps').maps({
+									source: 'http://dzvr.ru/api_maps.php?term_id='+$("#terminal_id").val()+'&lang='+$("#terminal_lang").val(),
+									height: 485,
+									mapfill: true
+								});
+
+								var self = map.data('maps');
+
+
+								map.on('mapready', function(e, selfs) {
+
+									self.switchLevel('floor1');
+
+									$("#tab6-cnt").hide();
+
+									//self.updateLocation();
+								});
+
+								$("#maps").on("click",".maps-list-location",function(){
+									$('html, body').animate({
+										scrollTop: $("#maps").offset().top
+									}, 400);
+								});
+							});
+						</script>
+</div>
+<div class="tabs-cnt nopadding" id="tab5-cnt" style="text-align:center;">
+<div id="panorama">
+<iframe border="0" height="420" src="" width="500">
+							Ваш браузер не поддерживает плавающие фреймы!
+						 </iframe>
+</div>
+<div id="panorama_full"><span class="pOpen">На весь экран</span><span class="pClose">Свернуть</span></div>
+</div>
+<div class="tabs-cnt passport" id="tab9-cnt">
+<div class="pass-tabs">
+<div class="pass-tabs-title ptt-sel" id="pass-tab-1">Доступность</div>
+<div class="pass-tabs-title" id="pass-tab-2">Фотографии</div>
+<div class="clear"></div>
+<div class="pass-tabs-cnt" id="pass-tab-1-cnt" style="display:block;">
+<table border="0" class="pass-rate">
+<tr>
+<td height="46" width="235">
+</td>
+<td><div class="pass-ico pass-ico-info ico-1"></div></td>
+<td><div class="pass-ico pass-ico-info ico-2"></div></td>
+<td><div class="pass-ico pass-ico-info ico-3"></div></td>
+<td><div class="pass-ico pass-ico-info ico-4"></div></td>
+</tr>
+<tr>
+<td>
+<span class="availabiItems">Доступность элементов:</span>
+</td>
+<td><div class="pass-ico pass-ico-big" id="passType1"></div><div class="pass-ico ico-vLine"></div><div class="pass-ico ico-gLine"></div></td>
+<td><div class="pass-ico pass-ico-big" id="passType2"></div><div class="pass-ico ico-vLine"></div><div class="pass-ico ico-gLine"></div></td>
+<td><div class="pass-ico pass-ico-big" id="passType3"></div><div class="pass-ico ico-vLine"></div><div class="pass-ico ico-gLine"></div></td>
+<td><div class="pass-ico pass-ico-big" id="passType4"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Парковки
+											
+																						<div class="passport-desc">
+<h3>													Парковки
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									На территории вокзального комплекса расположены 2 автопарковки. 1 парковка расположена с восточной стороны вокзала. 2 парковка расположена между 2 и 3 павильонами входного контроля. Обе парковки расположены на расстоянии 30м от входа в здание вокзала. Места для стоянки автотранспортных средств инвалидов обозначены дорожным знаком, разметкой.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Привокзальная площадь
+											
+																						<div class="passport-desc">
+<h3>													Привокзальная площадь
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Обеспечена достаточная ширина проходов на путях движения маломобильных пассажиров, имеется пространство для разворота кресла-коляски. Пути движения по прилегающей территории выполнены с понижением бордюрного пандуса. Ширина пути пешеходного движения не менее 2м.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Входные группы
+											
+																						<div class="passport-desc">
+<h3>													Входные группы
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Вход в здание вокзала со стороны города осуществляется через досмотровую зону. В зоне досмотра для пассажиров с кардиостимуляторами оборудован отдельный проход. У всех входных групп в здание вокзала установлены кнопки вызова персонала.  Вход со стороны платформ не имеет вертикальных препятствий. На платформах установлены кнопки экстренного вызова. 
+ Ширина дверных проемов более 0,9м. 
+Входные группы вокзала автоматические с фотоэлементом.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Пути движения
+											
+																						<div class="passport-desc">
+<h3>													Пути движения
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Места перепада высот оборудованы пандусами.
+Обеспечена достаточная ширина проходов на путях движения маломобильных пассажиров,  имеется пространство для разворота кресла-коляски.  
+Кнопка вызова персонала размещена при входе в здание вокзала.
+В здании вокзала размещены информационные тактильные таблички для людей с нарушением зрения.
+На входах в здание вокзала установлены  мнемосхемы.
+На стеклянные поверхности нанесены контрастные знаки, нижние и верхние ступени лестничных маршей имеют контрастные полосы.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Туалетные комнаты
+											
+																						<div class="passport-desc">
+<h3>													Туалетные комнаты
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									В здании вокзала расположены  3 адаптированных санузла для маломобильных пассажиров, расположенных на уровне 1 этажа (2 туалета в центральном холле и 1- в здании пристроя) оборудованных откидными поручнями, раковиной, кнопкой вызова персонала, знаками доступности. Ширина дверных проемов не менее 0,9м.   
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Залы ожидания
+											
+																						<div class="passport-desc">
+<h3>													Залы ожидания
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Зона отдыха и ожидания для маломобильных пассажиров  обозначена знаком доступности, оборудована индукционной петлей для пассажиров с нарушениями слуха,  электронным табло.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Кассы
+											
+																						<div class="passport-desc">
+<h3>													Кассы
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-orange-big"></div>
+<div class="rate">Частично доступно</div> <div class="percentRate pR-2">87.5%</div>
+<div class="clear"></div>
+</div>
+																									Кассовый блок пригородного сообщений  с пониженным прилавком  для инвалидов-колясочников.
+Установлено индукционное оборудование для пассажиров с нарушением  слуха.
+Кассы дальнего следования оборудованы установкой "электронная очередь".
+Кассовый блок дальнего сообщений с пониженным прилавком для инвалидов-колясочников отсутствуют и распложен на 3м этаже здания вокзала.
+Кассы оборудованы переговорными устройствами "пассажир-кассир". 
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color1"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Камеры хранения
+											
+																						<div class="passport-desc">
+<h3>													Камеры хранения
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Вход в камеру хранения №7 (в восточной части) не имеет препятствий, стойка приема багажа адаптирована для инвалидов. В камере хранения №3 расположены автоматические камеры хранения, которые варьируются по высоте. Доступ в камеру хранения осуществляется при помощи  дежурного персонала.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Комнаты отдыха
+											
+																						<div class="passport-desc">
+<h3>													Комнаты отдыха
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Комнаты отдыха расположены на 4-м и 5-ом этажах здания пристроя. В комнату отдыха можно попасть при помощи лифта, входные группы приспособлены для маломобильных пассажиров. Адаптированные комнаты для маломобильных пассажиров отсутствуют.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Платформы
+											
+																						<div class="passport-desc">
+<h3>													Платформы
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									На всех платформах нанесены предупредительные сигнальные полосы . Препятствий для перемещения маломобильных пассажиров по платформе нет.Также на платформах есть лифты обеспечивающие доступность маломобильных пассажиров. Предусмотрено дублирование визуальной информации  речевой (звуковой).
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Коммерческие помещения
+											
+																						<div class="passport-desc">
+<h3>													Коммерческие помещения
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Входные группы адаптированы для маломобильных пассажиров, в зонах приема пищи имеются прилавки, столики высотой от уровня пола не более 0,85м.
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr>
+<td class="availabiItm">
+																							Информация и навигация
+											
+																						<div class="passport-desc">
+<h3>													Информация и навигация
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Имеется визуальная информация и навигация. Звуковая  информация дублируется визуальной на табло. 
+Информирование пассажиров по громкоговорящей связи.
+Для ориентирования людей с нарушением зрения размещены тактильные напольные  указатели,
+установлены информационные мнемосхемы.
+Установлены кнопки экстренного вызова.
+Организовано сопровождение маломобильных пассажиров на вокзале по предварительной заявке или при личном обращении к работникам вокзала.
+
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div><div class="pass-ico ico-vLine"></div></td>
+</tr>
+<tr class="bgwhite">
+<td class="availabiItm">
+																							Средства транспортировки
+											
+																						<div class="passport-desc">
+<h3>													Средства транспортировки
+												</h3>
+<div class="rateDesc">
+													Оценка доступности:
+													<div class="clear"></div>
+<div class="pass-ico pass-ico-big ico-green-big"></div>
+<div class="rate">Доступно</div> <div class="percentRate pR-1">100%</div>
+<div class="clear"></div>
+</div>
+																									Доступ маломобильных пассажиров осуществляется на все этажи здания вокзала. Для подъема по лестницам инвалидов на креслах-колясках  имеются мобильные подъемники ( 3 шт.) , кнопки вызова работнтков вокзала размещены рядом с ними, а также имеются лифты соединяющие все этажи. При выходе на перрон с восточной и западной стороны установлены стационарные подъемные платформы. При выходе из тоннеля №2 на пассажирские платформы установлены 8 лифтов при подъеме на каждую пассажирскую платформу. Для транспортировки по вокзальному комплексу имеется кресло-коляска, предоставляется при обращении к дежурному по вокзалу.
+
+																								<div class="passport-row"></div>
+</div>
+</td>
+<td class="icoLineType1"><div class="pass-ico ico-color2"></div></td>
+<td class="icoLineType2"><div class="pass-ico ico-color2"></div></td>
+<td class="icoLineType3"><div class="pass-ico ico-color2"></div></td>
+<td class="icoLineType4"><div class="pass-ico ico-color2"></div></td>
+</tr>
+<script>
+								$(function(){
+
+									for(var i = 1; i < 5; i++){
+										var type0 = $(".icoLineType"+i+" div").hasClass("ico-color0");
+										var type1 = $(".icoLineType"+i+" div").hasClass("ico-color1");
+										var type2 = $(".icoLineType"+i+" div").hasClass("ico-color2");
+
+
+										if (!type0 && !type1) {
+											$("#passType"+i).addClass("ico-green-big");
+										} else if (type0 && type1 && type2) {
+											$("#passType"+i).addClass("ico-orange-big");
+										} else if (type0 && !type1 && !type2) {
+											 $("#passType"+i).addClass("ico-red-big");
+										} else if (!type0 && type1 && type2) {
+											$("#passType"+i).addClass("ico-orange-big");
+										} else {
+											$("#passType"+i).addClass("ico-orange-big");
+										}
+
+									}
+									var type0 = 0;
+									var type1 = 1;
+									var type2 = 2;
+									var all = 0;
+									for(var i = 1; i < 5; i++){
+										if ($("#passType"+i).hasClass("ico-red-big"))   all = all + type0;
+										if ($("#passType"+i).hasClass("ico-orange-big")) all = all + type1;
+										if ($("#passType"+i).hasClass("ico-green-big")) all = all + type2;
+									}
+									var percent = (all*50/4);
+									if (percent == 100) $("#percentRateTop").addClass("pR-1");
+									if (percent < 100 && percent > 49) $("#percentRateTop").addClass("pR-2");
+									if (percent < 50) $("#percentRateTop").addClass("pR-3");
+
+								});
+								</script>
+</table>
+<br/>
+							Оформить заявку на оказание услуг помощи и сопровождения можно круглосуточно без выходных дней по бесплатному федеральному номеру Центра содействия мобильности ОАО "РЖД" <a href="tel:8(800)775-00-00" style="text-decoration:none; color:#c4181f">8(800)775-00-00</a> (доб. 1). <br/>С подробной информацией можно ознакомиться по <a href="http://pass.rzd.ru/static/public/ru?STRUCTURE_ID=5284&amp;layer_id=3290&amp;refereLayerId=3290&amp;id=2336" style="color:#c4181f" target="_blank">ссылке</a><br/><br/>
+Перечень вокзалов, задействованных в работе ЦСМ РЖД, постоянно расширяется, за уточнением обращайтесь к оператору по указанному телефону.
+						</div>
+<div class="pass-tabs-cnt" id="pass-tab-2-cnt">
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-20190904_103804.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_1286753768.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Желтые круги на стеклянных поверхностях.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_935547075.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Инвалидная каляска, каталка с носилками.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_649702747.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Индукционное оборудование.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_1997083009.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Касса с пониженным прилавком.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_940988835.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Лифт.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_189064882.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Места для сидения МГН.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_1562668161.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Мнемосхема для слабовидящих инвалидов.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_394614321.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Пандус.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_2086556776.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Передвижная подъемная платформа.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_391681100.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Подъемная платформа пристрой.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_837888449.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Подъемная платформа ЦП.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_1628585292.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-СК для МГН 1-ый этаж.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_1447818823.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Таксофон для МГН.jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_1773205484.jpeg"/></a>
+<a class="pass-foto-group" href="http://cms.indigointeractive.ru/files/sverdlovsk/pa-b-Тактильная направляющая полоса (платформа).jpg" rel="group1"><img alt="" class="pass-foto" src="http://cms.indigointeractive.ru/files/sverdlovsk/pa-m-croppedImg_62310641.jpeg"/></a>
+</div>
+</div>
+<br class="clear"/>
+</div>
+<br class="clear"/>
+</div>
+</div>
+<div class="rowRight">
+<div class="link-wifi">
+					Wi-Fi на вокзале					<div class="block-wifi"><p>На всей территории вокзала - бесплатный Wi-Fi.</p></div>
+</div>
+<div class="link-passport tabpa" id="tab9">Электронный паспорт доступности вокзала</div>
+</div>
+<br style="clear:both;"/>
+</div>
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.clusters&amp;lang=ru-RU" type="text/javascript"></script>
+<script src="http://cms.indigointeractive.ru/json-terminal.php" type="text/javascript"></script>
+<script>
+	$(function(){
+
+		$('.slider').bxSlider({
+			auto: true
+		});
+
+		$(".st-all-term").click(function(){
+
+			if ($(this).hasClass("show-maps")) {
+				$(this).removeClass("show-maps");
+				$(".st-all-term-maps").hide();
+			} else {
+				$(this).addClass("show-maps");
+				$(".st-all-term-maps").show();
+			}
+
+		});
+
+		if ($(".search-input").data("search") == true) {
+			$(".search-input").autocomplete({
+								position:{my:"right top", at:"right bottom"},
+								minLength: 2,
+				source: function(request, response) {
+					var results = $.ui.autocomplete.filter(termListXY, request.term);
+
+					response(results.slice(0, 10));
+				},
+				focus: function(event, ui) {
+					$(".ui-autocomplete-input").val(ui.item[3]);
+				},
+				select: function( event, ui ) {
+					document.location.href = "http://"+ui.item[2]+".dzvr.ru";
+				},
+				change: function(event, ui) {
+					$(".search-input").val(ui.item[3]);
+				},
+				response: function(event, ui) {
+					if (ui.content.length === 0) {
+						$("#empty-message").html("<span>Ничего не найдено</span>").show();
+					} else {
+						$("#empty-message").html("").hide();
+					}
+				}
+			}).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+				return $("<li>").append('<a href="#">' + item[3] + '</a>').appendTo(ul);
+
+			};
+		} else {
+		}
+	});
+
+
+
+	ymaps.ready(init);
+
+	function init () {
+		var myMap = new ymaps.Map('map', {
+				center: [59.369315, 85.440191],
+				zoom: 3,
+				// Добавим к стандартным поведениям карты зум колесом мыши.
+				behaviors: ['default', 'scrollZoom']
+			});
+
+		myMap.controls.add('smallZoomControl', { top: 5 });
+
+		// Создаем кластеризатор c красной иконкой (по умолчанию используются синия).
+		var clusterer = new ymaps.Clusterer({preset: 'twirl#blueClusterIcons'}),
+			// Создаем коллекцию геообъектов.
+			collection = new ymaps.GeoObjectCollection();
+			// Дополнительное поле ввода при включенном режиме кластеризации.
+
+		// Добавляем кластеризатор на карту.
+		myMap.geoObjects.add(clusterer);
+
+		// Добавляем коллекцию геообъектов на карту.
+		myMap.geoObjects.add(collection);
+
+
+		// Добавление меток с произвольными координатами.
+		function addMarkers () {
+			var bounds = myMap.getBounds(),//,
+				gridSize = parseInt(100),
+
+				newPlacemarks = createGeoObjects(bounds);
+
+			if (gridSize > 0) {
+				clusterer.options.set({
+					gridSize: gridSize
+				});
+			}
+			clusterer.add(newPlacemarks);
+		}
+
+
+		// Функция, создающая необходимое количество геообъектов внутри указанной области.
+		function createGeoObjects (bounds) {
+			var placemarks = [];
+			for (var i in termListXY) {
+				coordinates = [termListXY[i][1],termListXY[i][0]];
+				// Создаем метку со случайными координатами.
+				myPlacemark = new ymaps.Placemark(//coordinates
+				[termListXY[i][1],termListXY[i][0]],
+				{
+					iconContent: '',
+					balloonContent:'<a href="http://'+termListXY[i][2]+'.dzvr.ru" target="_blank">'+termListXY[i][3]+'</a>',
+
+					hintContent: ''
+				},
+				{
+					iconImageHref: 'http://dzvr.ru/bitrix/templates/dzvr/img/ico-map-terminal.png'//, // картинка иконки
+				},
+				{
+					preset: 'twirl#blueIcon'
+				}
+				);
+				placemarks.push(myPlacemark);
+			}
+			return placemarks;
+		}
+		addMarkers();
+	}
+
+
+</script>
+<script>
+
+	ymaps.ready(init2);
+
+	function init2 () {
+	    var myMap = new ymaps.Map("first_map", {
+	            center: [56.882102, 60.473408],
+	            zoom: 14
+	        }),
+
+			myPlacemark = new ymaps.Placemark([56.882102, 60.473408], {
+				balloonContent: 'Вокзал Екатеринбург'
+			}, {
+				iconImageHref: 'http://dzvr.ru/images/ico-terminal.png', // картинка иконки
+				iconImageSize: [37, 43], // размеры картинки
+				iconImageOffset: [-14, -55] // смещение картинки
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+	}
+
+</script>
+<div class="footer">
+<div class="copy">
+			© Дирекция Железнодорожных Вокзалов, 2009 - 2020 год<br/>
+            При использовании любых материалов ссылка на dzvr.ru обязательна
+		</div>
+<div class="lang"><a href="/en/">English version</a></div>
+</div>
+</div>
+</body>
+</html>
