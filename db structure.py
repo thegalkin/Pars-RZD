@@ -71,20 +71,20 @@ for fName in onlyfiles:
         #services and summing
         summing = []
         services = []
-        try:
-            for tag in soup.findAll("td", class_="availabiItm"):
-                
+        
+        for tag in soup.findAll("td", class_="availabiItm"):
+            try:
                 services.append(re.sub("\n|\t", '', tag.h3.string))
-                if tag.find(class_="percentRate pR-1"):
-                    summing.append(tag.find(class_="percentRate pR-1").string )
-                elif(tag.find(class_="percentRate pR-2") ):
-                    summing.append(tag.find(class_="percentRate pR-2").string )
-                elif tag.find(class_="percentRate pR-3") :
-                    summing.append(tag.find(class_="percentRate pR-3").string )
-        except AttributeError:
-            print("Attribute error")
-            print(services)
-            raise AttributeError
+            except AttributeError:
+                re.sub("\n|\t", '', tag.string)
+            if tag.find(class_="percentRate pR-1"):
+                summing.append(tag.find(class_="percentRate pR-1").string )
+            elif(tag.find(class_="percentRate pR-2") ):
+                summing.append(tag.find(class_="percentRate pR-2").string )
+            elif tag.find(class_="percentRate pR-3") :
+                summing.append(tag.find(class_="percentRate pR-3").string )
+        
+            
         #wheelChair
         wheelChair = []
         for tag in soup.findAll("td", class_="icoLineType1"):
