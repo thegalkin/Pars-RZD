@@ -1049,8 +1049,7 @@ roads = """КРАС
 МОС"""
 
 g = list(zip(c.split("\n"), b.split("\n"), roads.split("\n")))
-for i in g:
-	print(i)
+print(g)
 
 """for i in g:
 	i[1] = int(i[1])"""
