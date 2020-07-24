@@ -25,15 +25,6 @@ for fName in onlyfiles:
         for tag in soup.findAll("td", class_="availabiItm"):
             
             print("{0}: {1}: ".format(tag.name, re.sub("\n|\t", '', tag.h3.string) ))
-
-
-            """ print("коляска :", end="")
-            if tag.find(class_="pass-ico ico-color1"):
-                print("25%")
-            elif(tag.find(class_="pass-ico ico-color2") ):
-                print("12.5%")
-            elif tag.find(class_="pass-ico ico-color3") :
-                print("0%")"""
         print("Коляска: ")
         for tag in soup.findAll("td", class_="icoLineType1"):
             
@@ -71,7 +62,72 @@ for fName in onlyfiles:
             elif tag.find(class_="pass-ico ico-color0") :
                 print("0%")
         
+        #services and summing
+        summing = []
+        services = []
+        for tag in soup.findAll("td", class_="availabiItm"):
+            
+            services.append(re.sub("\n|\t", '', tag.h3.string))
+            if tag.find(class_="percentRate pR-1"):
+                summing.append(tag.find(class_="percentRate pR-1").string )
+            elif(tag.find(class_="percentRate pR-2") ):
+                summing.append(tag.find(class_="percentRate pR-2").string )
+            elif tag.find(class_="percentRate pR-3") :
+                summing.append(tag.find(class_="percentRate pR-3").string )
+
+        #wheelChair
+        wheelChair = []
+        for tag in soup.findAll("td", class_="icoLineType1"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
+                wheelChair.append("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                wheelChair.append("12.5%")
+            elif tag.find(class_="pass-ico ico-color0") :
+                wheelChair.append("0%")
+
+        #walkStick
+        walkStick = []
+        for tag in soup.findAll("td", class_="icoLineType2"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
+                walkStick.append("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                walkStick.append("12.5%")
+            elif tag.find(class_="pass-ico ico-color0") :
+                walkStick.append("0%")
+
+        #hearing
+        hearing = []
+        for tag in soup.findAll("td", class_="icoLineType3"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
+                hearing.append("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                hearing.append("12.5%")
+            elif tag.find(class_="pass-ico ico-color0") :
+                hearing.append("0%")
+
+        #seeing
+        seeing = []
+        for tag in soup.findAll("td", class_="icoLineType4"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
+                seeing.append("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                seeing.append("12.5%")
+            elif tag.find(class_="pass-ico ico-color0") :
+                seeing.append("0%")
+
+
         wb = opx.Workbook()
         ws = wb.active()
         ws.title = soup.title.string
+        ws['A'] = services
+        ws['B'] = wheelChair
+        ws['C'] = walkStick
+        ws['D'] = hearing
+        ws['E'] = seeing
+        ws['F'] = summing
+
         
