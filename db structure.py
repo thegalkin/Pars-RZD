@@ -19,7 +19,10 @@ for fName in onlyfiles:
     i+=1
     #if i == 2: break
     with open(str(join(ph.Path.cwd(), fName)), "r") as site:
-        soup = bs(site.read(), "lxml")
+        try:
+            soup = bs(site.read(), "lxml")
+        except UnicodeDecodeError:
+            print("UnicodeDecodeError")
         """for line in soup:
             item = soup.find("td", class_="availabiItm").text
             item = re.sub("^\s+|\n|\t|\s+$", '', item)
@@ -68,16 +71,20 @@ for fName in onlyfiles:
         #services and summing
         summing = []
         services = []
-        for tag in soup.findAll("td", class_="availabiItm"):
-            
-            services.append(re.sub("\n|\t", '', tag.h3.string))
-            if tag.find(class_="percentRate pR-1"):
-                summing.append(tag.find(class_="percentRate pR-1").string )
-            elif(tag.find(class_="percentRate pR-2") ):
-                summing.append(tag.find(class_="percentRate pR-2").string )
-            elif tag.find(class_="percentRate pR-3") :
-                summing.append(tag.find(class_="percentRate pR-3").string )
-
+        try:
+            for tag in soup.findAll("td", class_="availabiItm"):
+                
+                services.append(re.sub("\n|\t", '', tag.h3.string))
+                if tag.find(class_="percentRate pR-1"):
+                    summing.append(tag.find(class_="percentRate pR-1").string )
+                elif(tag.find(class_="percentRate pR-2") ):
+                    summing.append(tag.find(class_="percentRate pR-2").string )
+                elif tag.find(class_="percentRate pR-3") :
+                    summing.append(tag.find(class_="percentRate pR-3").string )
+        except AttributeError:
+            print("Attribute error")
+            print(services)
+            raise AttributeError
         #wheelChair
         wheelChair = []
         for tag in soup.findAll("td", class_="icoLineType1"):
@@ -125,7 +132,11 @@ for fName in onlyfiles:
         print(fName)
         wb = opx.Workbook()
         ws = wb.active
-        ws.title = soup.title.string
+        try: 
+            ws.title = soup.title.string
+        except ValueError:
+            print("ValueError")
+            pass
         """ws['A'] = services
         ws['B'] = wheelChair
         ws['C'] = walkStick
