@@ -16,10 +16,13 @@ for fName in onlyfiles:
     if i == 2: break
     with open(str(join(ph.Path.cwd(), fName)), "r") as site:
         soup = bs(site.read(), "lxml")
-        for line in soup:
+        """for line in soup:
             item = soup.find("td", class_="availabiItm").text
             item = re.sub("^\s+|\n|\t|\s+$", '', item)
-            items.append(item)
-
+            items.append(item)"""
+        
+        for tag in soup.findAll("td", class_="availabiItm"):
+            
+            print("{0}: {1}".format(tag.name, re.sub("\n|\t", '', tag.h3.string)))
 
 print(items)
