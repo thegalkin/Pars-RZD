@@ -11,12 +11,12 @@ roads = [('1', 'Абакан', 'КРАС'), ('2', 'Абдулино', 'КБШ'),
 
 homeDirectory = ph.Path.cwd()
 chdir("{}/downloads".format(ph.Path.cwd()))
-onlyfiles = [f for f in listdir(ph.Path.cwd()) if isfile(
-    join(ph.Path.cwd(), f))]  # создаем список файлов в папке загрузок
+onlyfiles = [f for f in listdir(ph.Path.cwd()) if 
+    join(ph.Path.cwd(), f).endswith(".html")]  # создаем список файлов в папке загрузок
 
 i = 0
 items = []
-# print(onlyfiles)
+print(onlyfiles)
 
 
 # Объявление файла excel
@@ -57,14 +57,15 @@ for fName in onlyfiles:
                     float(tag.find(class_="percentRate pR-3").string.replace("%", "")))
 
         stationName = fName.replace(".html", "")
-        print(stationName)
+        #print(stationName)
 
         try:
             ws.title = soup.title.string
         except ValueError:
             print("ValueError")
             pass
-        print("here: {}".format(summing))
+        #print("here: {}".format(summing))
+        
         try:
             average.append(
                 str(round(sum(summing) / len(summing), 1)).replace(".", ",") + "%")
@@ -77,8 +78,8 @@ for fName in onlyfiles:
                 road.append(l[2])
         allStations.append(stationName)
         #ws.append(tuple(fName.replace(".html", "")))
-
-        print("{}%".format(i/len(onlyfiles)*100))
+        print("id:", index[len(index)-1],"name:", allStations[len(allStations)-1],"road:", road[len(road)-1],"av:", average[len(average)-1], sep="|")
+        #print("{}%".format(i/len(onlyfiles)*100))
 
 for row in zip(index, allStations, road, average):
     ws.append(row)
