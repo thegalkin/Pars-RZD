@@ -10,18 +10,21 @@ def appendToDb():
 homeDirectory = ph.Path.cwd()
 chdir("{}/downloads".format(ph.Path.cwd()))
 onlyfiles = [f for f in listdir(ph.Path.cwd()) if isfile(join(ph.Path.cwd(), f))] # создаем список файлов в папке загрузок
+
 i = 0
 items = []
+print(onlyfiles)
 for fName in onlyfiles:
+    
     i+=1
-    if i == 2: break
+    #if i == 2: break
     with open(str(join(ph.Path.cwd(), fName)), "r") as site:
         soup = bs(site.read(), "lxml")
         """for line in soup:
             item = soup.find("td", class_="availabiItm").text
             item = re.sub("^\s+|\n|\t|\s+$", '', item)
             items.append(item)"""
-        print(soup.title.string)
+        """print(soup.title.string)
         for tag in soup.findAll("td", class_="availabiItm"):
             
             print("{0}: {1}: ".format(tag.name, re.sub("\n|\t", '', tag.h3.string) ))
@@ -60,7 +63,7 @@ for fName in onlyfiles:
             elif(tag.find(class_="pass-ico ico-color1") ):
                 print("12.5%")
             elif tag.find(class_="pass-ico ico-color0") :
-                print("0%")
+                print("0%")"""
         
         #services and summing
         summing = []
@@ -119,7 +122,7 @@ for fName in onlyfiles:
             elif tag.find(class_="pass-ico ico-color0") :
                 seeing.append("0%")
 
-        
+        print(fName)
         wb = opx.Workbook()
         ws = wb.active
         ws.title = soup.title.string
@@ -135,3 +138,8 @@ for fName in onlyfiles:
             ws.append(row)
         chdir("{}/tables".format(homeDirectory))
         wb.save('{}.xlsx'.format(soup.title.string))
+        wb.close()
+        chdir("{}/downloads".format(homeDirectory))
+
+    print("{}%".format(i/len(onlyfiles)*100))
+    
