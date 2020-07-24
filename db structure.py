@@ -121,13 +121,13 @@ for fName in onlyfiles:
 
 
         wb = opx.Workbook()
-        ws = wb.active()
+        ws = wb.active
         ws.title = soup.title.string
-        ws['A'] = services
+        """ws['A'] = services
         ws['B'] = wheelChair
         ws['C'] = walkStick
         ws['D'] = hearing
         ws['E'] = seeing
-        ws['F'] = summing
-
-        
+        ws['F'] = summing"""
+        for row in zip(services, wheelChair, )
+        wb.save('{}.xlsx'.format(soup.title.string))
