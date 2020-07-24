@@ -3,7 +3,7 @@ import sys, time, re
 import pathlib as ph
 from os import listdir,chdir
 from os.path import isfile, join
-import open
+import openpyxl as opx
 def appendToDb():
     return
 
@@ -24,14 +24,87 @@ for fName in onlyfiles:
         print(soup.title.string)
         for tag in soup.findAll("td", class_="availabiItm"):
             
-            print("{0}: {1}: ".format(tag.name, re.sub("\n|\t", '', tag.h3.string) ), end="")
+            print("{0}: {1}: ".format(tag.name, re.sub("\n|\t", '', tag.h3.string) ))
 
 
-
-
+            """ print("коляска :", end="")
+            if tag.find(class_="pass-ico ico-color1"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color2") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color3") :
+                print("0%")"""
+        
+        for tag in soup.findAll("td", class_="icoLineType1"):
+            print("Коляска: ", end="")
+            if tag.find(class_="pass-ico ico-color0"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color2") :
+                print("0%")
+        for tag in soup.findAll("td", class_="icoLineType2"):
+            print("Трость: ", end="")
+            if tag.find(class_="pass-ico ico-color0"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color2") :
+                print("0%")
+        for tag in soup.findAll("td", class_="icoLineType3"):
+            print("Слух: ", end="")
+            if tag.find(class_="pass-ico ico-color0"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color2") :
+                print("0%")
+        for tag in soup.findAll("td", class_="icoLineType4"):
+            print("Зрение: ", end="")
+            if tag.find(class_="pass-ico ico-color0"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color1") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color2") :
+                print("0%")
+            """print("sum :", end="")
             if tag.find(class_="percentRate pR-1"):
                 print(tag.find(class_="percentRate pR-1").string )
             elif(tag.find(class_="percentRate pR-2") ):
                 print(tag.find(class_="percentRate pR-2").string )
             elif tag.find(class_="percentRate pR-3") :
                 print(tag.find(class_="percentRate pR-3").string )
+
+
+            print("коляска :", end="")
+            if tag.find(class_="pass-ico ico-color1"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color2") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color3") :
+                print("0%")
+
+
+            print("трость :", end="")
+            if tag.find(class_="pass-ico ico-color1"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color2") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color3") :
+                print("0%")
+            
+            print("слух :", end="")
+            if tag.find(class_="pass-ico ico-color1"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color2") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color3") :
+                print("0%")
+
+            print("зрение :", end="")
+            if tag.find(class_="pass-ico ico-color1"):
+                print("25%")
+            elif(tag.find(class_="pass-ico ico-color2") ):
+                print("12.5%")
+            elif tag.find(class_="pass-ico ico-color3") :
+                print("0%")"""
