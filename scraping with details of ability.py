@@ -78,11 +78,11 @@ for fName in onlyfiles:
             except AttributeError:
                 re.sub("\n|\t", '', tag.string)
             if tag.find(class_="percentRate pR-1"):
-                summing.append(tag.find(class_="percentRate pR-1").string )
+                summing.append(tag.find(class_="percentRate pR-1").string.replace(".", ",") )
             elif(tag.find(class_="percentRate pR-2") ):
-                summing.append(tag.find(class_="percentRate pR-2").string )
+                summing.append(tag.find(class_="percentRate pR-2").string.replace(".", ",") )
             elif tag.find(class_="percentRate pR-3") :
-                summing.append(tag.find(class_="percentRate pR-3").string )
+                summing.append(tag.find(class_="percentRate pR-3").string.replace(".", ",") )
         
             
         #wheelChair
@@ -92,7 +92,7 @@ for fName in onlyfiles:
             if tag.find(class_="pass-ico ico-color2"):
                 wheelChair.append("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
-                wheelChair.append("12.5%")
+                wheelChair.append("12,5%")
             elif tag.find(class_="pass-ico ico-color0") :
                 wheelChair.append("0%")
 
@@ -103,7 +103,7 @@ for fName in onlyfiles:
             if tag.find(class_="pass-ico ico-color2"):
                 walkStick.append("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
-                walkStick.append("12.5%")
+                walkStick.append("12,5%")
             elif tag.find(class_="pass-ico ico-color0") :
                 walkStick.append("0%")
 
@@ -114,7 +114,7 @@ for fName in onlyfiles:
             if tag.find(class_="pass-ico ico-color2"):
                 hearing.append("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
-                hearing.append("12.5%")
+                hearing.append("12,5%")
             elif tag.find(class_="pass-ico ico-color0") :
                 hearing.append("0%")
 
@@ -125,7 +125,7 @@ for fName in onlyfiles:
             if tag.find(class_="pass-ico ico-color2"):
                 seeing.append("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
-                seeing.append("12.5%")
+                seeing.append("12,5%")
             elif tag.find(class_="pass-ico ico-color0") :
                 seeing.append("0%")
 
@@ -148,7 +148,7 @@ for fName in onlyfiles:
         for row in zip(services, wheelChair, walkStick, hearing, seeing, summing):
             ws.append(row)
         chdir("{}/tables".format(homeDirectory))
-        wb.save('{}.xlsx'.format(soup.title.string))
+        wb.save('{}.xlsx'.format(fName.replace(".html", "")))
         wb.close()
         chdir("{}/downloads".format(homeDirectory))
 
