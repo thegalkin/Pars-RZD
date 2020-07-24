@@ -70,4 +70,8 @@ for fName in onlyfiles:
                 print("12.5%")
             elif tag.find(class_="pass-ico ico-color0") :
                 print("0%")
-            
+        
+        wb = opx.Workbook()
+        ws = wb.active()
+        ws.title = soup.title.string
+        
