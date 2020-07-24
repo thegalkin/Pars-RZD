@@ -36,15 +36,15 @@ for fName in onlyfiles:
             except AttributeError:
                 re.sub("\n|\t", '', tag.string)
             if tag.find(class_="percentRate pR-1"):
-                summing.append(tag.find(class_="percentRate pR-1").string.replace(".", ",") )
+                summing.append(int(tag.find(class_="percentRate pR-1").string.replace("%", "")))
             elif(tag.find(class_="percentRate pR-2") ):
-                summing.append(tag.find(class_="percentRate pR-2").string.replace(".", ",") )
+                summing.append(int(tag.find(class_="percentRate pR-2").string.replace("%", "")))
             elif tag.find(class_="percentRate pR-3") :
-                summing.append(tag.find(class_="percentRate pR-3").string.replace(".", ",") )
+                summing.append(int(tag.find(class_="percentRate pR-3").string.replace("%", "")))
         
         
-
-        print(fName.replace(".html", ""))
+        stationName = fName.replace(".html", "")
+        print(stationName)
         wb = opx.Workbook()
         ws = wb.active
         try: 
@@ -53,9 +53,9 @@ for fName in onlyfiles:
             print("ValueError")
             pass
        
-        
-        ws.append(tuple(fName.replace(".html", "")))
-        for row in zip(services, wheelChair, walkStick, hearing, seeing, summing):
+        average = sum(summing)/ len(summing)
+        #ws.append(tuple(fName.replace(".html", "")))
+        for row in zip(index, stationName, average):
             ws.append(row)
         chdir("{}/tables".format(homeDirectory))
         wb.save('{}.xlsx'.format(fName.replace(".html", "")))
