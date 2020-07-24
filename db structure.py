@@ -34,77 +34,40 @@ for fName in onlyfiles:
                 print("12.5%")
             elif tag.find(class_="pass-ico ico-color3") :
                 print("0%")"""
-        
+        print("Коляска: ")
         for tag in soup.findAll("td", class_="icoLineType1"):
-            print("Коляска: ", end="")
-            if tag.find(class_="pass-ico ico-color0"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
                 print("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
                 print("12.5%")
-            elif tag.find(class_="pass-ico ico-color2") :
+            elif tag.find(class_="pass-ico ico-color0") :
                 print("0%")
+        print("Трость: ")
         for tag in soup.findAll("td", class_="icoLineType2"):
-            print("Трость: ", end="")
-            if tag.find(class_="pass-ico ico-color0"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
                 print("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
                 print("12.5%")
-            elif tag.find(class_="pass-ico ico-color2") :
+            elif tag.find(class_="pass-ico ico-color0") :
                 print("0%")
+        print("Слух: " )
         for tag in soup.findAll("td", class_="icoLineType3"):
-            print("Слух: ", end="")
-            if tag.find(class_="pass-ico ico-color0"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
                 print("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
                 print("12.5%")
-            elif tag.find(class_="pass-ico ico-color2") :
+            elif tag.find(class_="pass-ico ico-color0") :
                 print("0%")
+        print("Зрение: " )
         for tag in soup.findAll("td", class_="icoLineType4"):
-            print("Зрение: ", end="")
-            if tag.find(class_="pass-ico ico-color0"):
+            
+            if tag.find(class_="pass-ico ico-color2"):
                 print("25%")
             elif(tag.find(class_="pass-ico ico-color1") ):
                 print("12.5%")
-            elif tag.find(class_="pass-ico ico-color2") :
-                print("0%")
-            """print("sum :", end="")
-            if tag.find(class_="percentRate pR-1"):
-                print(tag.find(class_="percentRate pR-1").string )
-            elif(tag.find(class_="percentRate pR-2") ):
-                print(tag.find(class_="percentRate pR-2").string )
-            elif tag.find(class_="percentRate pR-3") :
-                print(tag.find(class_="percentRate pR-3").string )
-
-
-            print("коляска :", end="")
-            if tag.find(class_="pass-ico ico-color1"):
-                print("25%")
-            elif(tag.find(class_="pass-ico ico-color2") ):
-                print("12.5%")
-            elif tag.find(class_="pass-ico ico-color3") :
-                print("0%")
-
-
-            print("трость :", end="")
-            if tag.find(class_="pass-ico ico-color1"):
-                print("25%")
-            elif(tag.find(class_="pass-ico ico-color2") ):
-                print("12.5%")
-            elif tag.find(class_="pass-ico ico-color3") :
+            elif tag.find(class_="pass-ico ico-color0") :
                 print("0%")
             
-            print("слух :", end="")
-            if tag.find(class_="pass-ico ico-color1"):
-                print("25%")
-            elif(tag.find(class_="pass-ico ico-color2") ):
-                print("12.5%")
-            elif tag.find(class_="pass-ico ico-color3") :
-                print("0%")
-
-            print("зрение :", end="")
-            if tag.find(class_="pass-ico ico-color1"):
-                print("25%")
-            elif(tag.find(class_="pass-ico ico-color2") ):
-                print("12.5%")
-            elif tag.find(class_="pass-ico ico-color3") :
-                print("0%")"""
