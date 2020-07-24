@@ -14,8 +14,14 @@ onlyfiles = [f for f in listdir(ph.Path.cwd()) if isfile(join(ph.Path.cwd(), f))
 i = 0
 items = []
 #print(onlyfiles)
+
+
+##Объявление файла excel
+wb = opx.Workbook()
+ws = wb.active
+##
+errors = 0
 for fName in onlyfiles:
-    
     i+=1
     #if i == 2: break
     with open(str(join(ph.Path.cwd(), fName)), "r") as site:
@@ -35,32 +41,40 @@ for fName in onlyfiles:
             except AttributeError:
                 re.sub("\n|\t", '', tag.string)
             if tag.find(class_="percentRate pR-1"):
-                summing.append(int(tag.find(class_="percentRate pR-1").string.replace("%", "")))
+                summing.append(float(tag.find(class_="percentRate pR-1").string.replace("%", "")))
             elif(tag.find(class_="percentRate pR-2") ):
-                summing.append(int(tag.find(class_="percentRate pR-2").string.replace("%", "")))
+                summing.append(float(tag.find(class_="percentRate pR-2").string.replace("%", "")))
             elif tag.find(class_="percentRate pR-3") :
-                summing.append(int(tag.find(class_="percentRate pR-3").string.replace("%", "")))
+                summing.append(float(tag.find(class_="percentRate pR-3").string.replace("%", "")))
         
         
         stationName = fName.replace(".html", "")
         print(stationName)
-        wb = opx.Workbook()
-        ws = wb.active
+        
         try: 
             ws.title = soup.title.string
         except ValueError:
             print("ValueError")
             pass
-       
-        average = sum(summing)/ len(summing)
-        index = 
+        print("here: {}".format(summing))
+        try:
+            average = str(sum(summing) / len(summing)).replace(".", ",") + "%"
+        except ZeroDivisionError:
+            average = "Error"
+            errors += 1
+        for l in roads:
+            if stationName in l:
+                index = l[0]
+                road = l[2]
         #ws.append(tuple(fName.replace(".html", "")))
-        for row in zip(index, stationName, average):
+        for row in zip(index, stationName, road, average):
             ws.append(row)
-        chdir("{}/tables".format(homeDirectory))
-        wb.save('{}.xlsx'.format(fName.replace(".html", "")))
-        wb.close()
-        chdir("{}/downloads".format(homeDirectory))
+        print("{}%".format(i/len(onlyfiles)*100))
 
-    print("{}%".format(i/len(onlyfiles)*100))
+        
+print("Ошибок: {} ".format(errors))
+chdir("{}/output".format(homeDirectory))
+wb.save('{}.xlsx'.format("outputFile"))
+wb.close()
+
     
