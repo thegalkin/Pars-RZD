@@ -7,7 +7,7 @@ import openpyxl as opx
 def appendToDb():
     return
 
-
+homeDirectory = ph.Path.cwd()
 chdir("{}/downloads".format(ph.Path.cwd()))
 onlyfiles = [f for f in listdir(ph.Path.cwd()) if isfile(join(ph.Path.cwd(), f))] # создаем список файлов в папке загрузок
 i = 0
@@ -119,7 +119,7 @@ for fName in onlyfiles:
             elif tag.find(class_="pass-ico ico-color0") :
                 seeing.append("0%")
 
-
+        
         wb = opx.Workbook()
         ws = wb.active
         ws.title = soup.title.string
@@ -129,5 +129,9 @@ for fName in onlyfiles:
         ws['D'] = hearing
         ws['E'] = seeing
         ws['F'] = summing"""
-        for row in zip(services, wheelChair, )
+        
+        ws.append((" ", "Коляска", "Трость", "Слух", "Зрение", "Сумма"))
+        for row in zip(services, wheelChair, walkStick, hearing, seeing, summing):
+            ws.append(row)
+        chdir("{}/tables".format(homeDirectory))
         wb.save('{}.xlsx'.format(soup.title.string))
