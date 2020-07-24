@@ -3,6 +3,7 @@ import sys, time, re
 import pathlib as ph
 from os import listdir,chdir
 from os.path import isfile, join
+import open
 def appendToDb():
     return
 
@@ -25,7 +26,7 @@ for fName in onlyfiles:
             
             print("{0}: {1}: ".format(tag.name, re.sub("\n|\t", '', tag.h3.string) ), end="")
 
-            
+
 
 
             if tag.find(class_="percentRate pR-1"):
