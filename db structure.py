@@ -23,6 +23,6 @@ for fName in onlyfiles:
         
         for tag in soup.findAll("td", class_="availabiItm"):
             
-            print("{0}: {1}".format(tag.name, re.sub("\n|\t", '', tag.h3.string)))
+            print("{0}: {1}: {}".format(tag.name, re.sub("\n|\t", '', tag.h3.string), tag.findAll(class_="percentRate pR-1")))
 
 print(items)
